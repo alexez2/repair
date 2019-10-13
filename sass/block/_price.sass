@@ -1,0 +1,115 @@
+.price
+    padding-top: 86px
+    @media screen and ( max-width: 321px)
+        padding-top: 49px
+
+    &_title
+        max-width: 515px
+        margin: auto
+        +bol
+        font-size: 30px
+        text-align: center
+        line-height: 45px
+        @media screen and ( max-width: 321px)
+            font-size: 18px
+            line-height: 22px
+            max-width: 250px
+    &_subtitle
+        font-size: 20px 
+        max-width: 250px
+        margin: auto
+        font-weight: 400
+        line-height: 45px 
+        margin-top: 38px 
+        margin-left: 41.2%
+        @media screen and ( max-width: 796px)
+            margin: auto
+        @media screen and ( max-width:  321px)
+            font-size: 14px
+            margin-left: 22%
+            margin-top: 9px 
+
+    &_bloks
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 48px
+        padding-left: 5px
+        text-align: center
+        @media screen and ( max-width: 796px)
+             justify-content: center
+               
+    &_block
+        border: 1px solid $border_color 
+        margin-bottom: 30px  
+        align-items: center
+        max-width: 370px
+        margin-right: 6px
+        &_title
+            @media screen and ( max-width: 321px )
+                margin-bottom: 12px
+                
+        @media screen and ( max-width: 321px)
+             margin-right: 0px
+             max-width: 271px
+             margin-bottom: 33px
+        &:hover
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+            transition: 0.2s
+            
+    &_text
+        padding-top: 13px
+        padding-bottom: 45px
+        font-size: 18px 
+        padding-left: 6px
+        @media screen and ( max-width: 321px)
+           font-size: 14px 
+           padding-top: 10px
+           padding-bottom: 30px
+           padding-left: 0px
+    &_link 
+        +bol 
+        text-decoration: none
+        color: $color_font
+        font-size: 16px
+        margin-top: 6px
+        position: relative
+        display: inline-block
+        z-index: 0
+        @media screen and ( max-width: 321px)
+            margin-top: 0px
+            font-size: 16px
+        &:hover
+            &:after
+                height: 13px 
+        &:after
+            content: ""
+            width: 100%
+            z-index: -1
+            bottom: -4px
+            left: 0
+            height: 3px
+            background-color: $color_main
+            position: absolute
+            display: block
+            transition: 0.2s
+    &_img
+        position: relative
+        & img 
+            display: block
+            width: 100%
+        &:hover
+            &:before
+                opacity: 0.6
+        &:before
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+            width: 100%
+            height: 100%
+            opacity: 0
+            transition: 0.2s
+
+            

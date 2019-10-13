@@ -1,0 +1,47 @@
+
+@import  "fonts"
+.container
+  max-width: 1183px
+  width: 95%
+  margin: auto
+  @media screen and (max-width: 768px)
+    max-width: 700px
+    width: 95%
+    .navbar__contacts
+     display: none
+
+  /*1200px. и менее 768px.*/
+
+.navbar_
+ &_block
+   display: flex
+   justify-content: space-between
+   margin: 7px
+   @media ( max-width: 768px)
+     margin-top: 16px
+
+     
+ &_logo img
+   @media (max-width: 768px)
+    max-width: 91px   
+
+ &_contacts
+   display: flex
+   flex-direction: column
+
+   & span
+     font-size: 13px
+     text-align: right
+     color: #333333
+     margin-bottom: 4px
+   & a
+     font-size: 20px
+     text-decoration: none
+     color: #333333
+     margin-top: 2px
+     font-weight: bold
+     +bol 
+
+ &_info
+   display: flex
+   align-items: center

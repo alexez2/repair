@@ -1,12 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ремонт квартир</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <script type="text/javascript" src="js/slick.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
 </head>
+
 <body>
-    
+
+  <div class="navbar">
+    <div class="container">
+      <div class="navbar__block">
+        <div class="navbar__logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="navbar__info">
+          <div class="navbar__contacts">
+            <span>
+              Калуга, Москва, МО
+            </span>
+            <a href="tel:+74954225131">+7 (495) 42-251-31</a>
+          </div>
+          <button class="button button_navbar" name="button" id="button_callme">Перезвоните мне</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero_block">
+          <div class="hero_text">
+            <h1 class="hero_text__title">
+              Внутренняя отделка
+              помещений "под ключ"
+            </h1>
+            <h2 class="hero_text__subtitle">
+              с гарантией качества, прописанной в договоре
+            </h2>
+            <ul class="hero_text__list">
+              <li>
+                <div class="hero_text__listimg"><img src="img/hero_list_img1.png" alt=""></div><span class="hero_text__listtext">Точно соблюдаем сроки</span>
+              </li>
+              <li>
+                <div class="hero_text__listimg"><img src="img/hero_list_img2.png" alt=""></div><span class="hero_text__listtext">Рассчитаем смету на работы и материалы в день обращения</span>
+              </li>
+              <li>
+                <div class="hero_text__listimg"><img src="img/hero_list_img3.png" alt=""></div><span class="hero_text__listtext">Предложим более 100 вариантов исполнения дизайна Вашего жилья</span>
+              </li>
+            </ul>
+          </div>
+          <div class="hero_img">
+            <img src="img/hero_img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <section class="offer_wrap">
+    <div class="container">
+      <div class="offer_block">
+        <div class="offer_block__title">
+           Мы бесплатно разработаем 
+            дизайн-проект Вашего жилья 
+            и реализуем его!
+        </div>
+        <div class="offer_block__subtitle">
+          Оставьте заявку на разработку 
+          бесплатного дизайн-проекта!          
+        </div>
+        <form action="#" class="offer_block__form">
+          <input name="username" class="offer_block__input"  type="text" value="Ваше Имя">
+          <input name="userphone" class="offer_block__input" type="tel" value="Ваш Телефон">
+          <button class="offer_block__btn button_navbar"><span class="btn_span">Получить бесплатный дизайн-проект</span></button>
+        </form>
+        <div class="offer_block__offer_text">
+          <div class="offer_block__offer_text_title">Наш менеджер перезвонит Вам
+            в течение 60 секунд</div>
+          <div class="offer_block__offer_text_phone">или перезвоните нам сами <span>+7 (495) 42-251-31</span></div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <div class="modal-dialog__title">
+          Узнайте точную стоимость
+          ремонта по телефону!
+      </div>
+      <div class="modal-dialog_subtitle">
+          Заполните поля ниже - мы свяжемся с Вами
+      </div>
+      <form action="#" class="modal-dialog_form">
+        <input type="text" class="modal-dialog_input" name="" id="" value="Ваше имя">
+        <input type="text" class="modal-dialog_input" name="" id="" value="Ваш телефон">
+        <button class="modal-dialog_btn button_navbar">Узнать стоимость</button>
+      </form>
+      <div class="modal-dialog_contacts">Или Вы можете перезвонить нам сами
+          по телефону:</div>
+          <div class="modal-dialog_tel">
+              +7 (8182) 42-51-31
+          </div>
+    </div>
+  </div>
+
+  <section class="portfolio">
+   <div class="container">
+    <div class="portfolio_title">
+      <span>Работая с 2007 года,</span>
+      <span>мы сделали более 500 ремонтов в квартирах и домах</span>
+    </div>
+
+      <div class="portfolio_slider">
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo1.jpg" alt=""></div>
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo2.jpg" alt=""></div>
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo3.jpg" alt=""></div>
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo1.jpg" alt=""></div>
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo2.jpg" alt=""></div>
+         <div class="portfolio_slider_photo"><img src="img/portfolio/portfolio_photo3.jpg" alt=""></div>
+      </div>
+      <div class="portfolio_arrows_wrap">
+      <div class="portfolio_arrows">
+        <div class="left_arrows"><img src="img/portfolio/left-arrow.png" alt=""></div>
+        <div class="right_arrows"><img src="img/portfolio/right-arrow.png" alt=""></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="container">
+      <div class="price_title">У нас очень гибкая система скидок на комплексные работы!</div>
+      <div class="price_subtitle">Прайс на наши услуги</div>
+      <div class="price_bloks">
+        
+        <div class="price_block wow fadeInUp" data-wow-delay="0.1s">
+          <div class="price_img"><img src="/img/price/bathroom.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Ремонт ванных комнат и с/у</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+        <div class="price_block  wow fadeInUp"  data-wow-delay="0.2s">
+          <div class="price_img"><img src="/img/price/room.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Ремонт комнат и квартир</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+        <div class="price_block  wow fadeInUp"  data-wow-delay="0.3s">
+          <div class="price_img"><img src="/img/price/office.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Отделка офисных помещений</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+        <div class="price_block  wow fadeInUp">
+          <div class="price_img"><img src="/img/price/building.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Ремонт в новостройках</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+        <div class="price_block  wow fadeInUp">
+          <div class="price_img"><img src="/img/price/kitchen.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Ремонт кухонь</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+        <div class="price_block  wow fadeInUp">
+          <div class="price_img"><img src="/img/price/house.jpg" alt=""></div>
+          <div class="price_text">
+            <h4 class="price_block_title">Ремонт дач и коттеджей</h4>
+            <a href="#" class="price_link">Узнать цены</a>
+          </div>
+        </div>
+
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/main2.js"></script>  
+  <script src="js/slider.js"></script> 
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  
 </body>
+
 </html>

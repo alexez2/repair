@@ -1,0 +1,69 @@
+.portfolio
+    background: $color_background url("../img/portfolio/backgraund.jpg") 50% repeat-y
+    background-position:  center left
+    position: relative
+    @media (max-width: 768px)
+        background: $color_background  
+    &:before  
+        content: ""
+        position: absolute
+        width: 50%
+        height: 100%
+        top: 0px
+        right: 0px
+        background: $color_background
+    &_title
+        position: relative
+        color: $color_font
+        font-size: 30px
+        text-align: center 
+        padding-top: 95px
+        padding-bottom: 99px 
+        max-width: 790px
+        margin: auto
+        & span
+            display: block
+            +bol
+            line-height: 40px
+            padding: 0
+            margin-top: 5px
+        @media (max-width: 325px)
+           padding-bottom: 40px 
+           padding-top: 45px
+           & span
+                font-size: 18px
+                line-height: 20px
+                margin-top: 0px
+                font-weight: 400
+                +bol    
+        
+                  
+    &_arrows_wrap
+        position: relative
+      
+    &_arrows
+        padding-top: 64px
+        padding-bottom: 100px
+        max-width: 120px
+        justify-content: space-between
+        margin: auto
+        display: flex
+        @media (max-width: 325px)
+             padding-top: 50px
+             padding-bottom: 60px
+
+
+
+.right_arrows, .left_arrows 
+    display: relative
+    cursor: pointer
+.portfolio_slider_photo 
+    text-align: center 
+
+.portfolio_slider
+    & img
+       margin: auto  
+       @media (max-width: 325px)
+          max-width: 246px     
+            
+
